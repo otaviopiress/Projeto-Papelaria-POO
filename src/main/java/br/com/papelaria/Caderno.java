@@ -6,7 +6,7 @@ public class Caderno extends Produto implements Desconto {
     private int numeroDeFolhas;
 
 
-    public Caderno(String nome, double preco, int numeroDeFolhas) {
+    public Caderno(String nome, double preco, int numeroDeFolhas) { //Isso é construtor
         super(nome, preco);
         this.numeroDeFolhas = numeroDeFolhas;
     }

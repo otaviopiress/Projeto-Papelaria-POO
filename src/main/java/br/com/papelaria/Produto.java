@@ -1,10 +1,12 @@
-package br.com.papelaria;
+package br.com.papelaria; /* Namespace do projeto. Serve para organizar o codigo em diretorios e evitar
+conflitos de nome de classes entre pacotes distintos. */
+
 
 public class Produto {
     private String nome;
     private double preco;
 
-    public Produto(String nome, double preco) {
+    public Produto(String nome, double preco) { //Isso é construtor
         this.nome = nome;
         this.preco = preco;
     }
@@ -25,7 +27,7 @@ public class Produto {
         this.preco = preco;
     }
 
-    public void exibirDetalhes(){
-        System.out.println("Produto: "+nome+" - Preço; R$ "+preco);
+    public void exibirDetalhes(){ //Isso é construtor
+        System.out.println("Produto: "+nome+" - Preço: R$ "+preco);
     }
 }

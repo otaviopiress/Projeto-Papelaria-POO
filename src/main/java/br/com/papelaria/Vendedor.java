@@ -2,7 +2,7 @@ package br.com.papelaria;
 
 public class Vendedor extends Funcionario {
 
-    public Vendedor(String nome, double salario){
+    public Vendedor(String nome, double salario){ //Isso é construtor
         super(nome, salario);
     }
 
