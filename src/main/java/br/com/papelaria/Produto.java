@@ -1,12 +1,14 @@
-package br.com.papelaria; /* Namespace do projeto. Serve para organizar o codigo em diretorios e evitar
-conflitos de nome de classes entre pacotes distintos. */
+package br.com.papelaria;
 
+/* Classe base de tudo que a loja vende: guarda o que é comum a qualquer produto. */
 
 public class Produto {
+    // private: só esta classe altera os campos; de fora, apenas via getters/setters
     private String nome;
     private double preco;
 
-    public Produto(String nome, double preco) { //Isso é construtor
+    // Construtor: cria o objeto já com nome e preço preenchidos
+    public Produto(String nome, double preco) {
         this.nome = nome;
         this.preco = preco;
     }
@@ -27,7 +29,8 @@ public class Produto {
         this.preco = preco;
     }
 
-    public void exibirDetalhes(){ //Isso é construtor
-        System.out.println("Produto: "+nome+" - Preço: R$ "+preco);
+    // Comportamento padrão; as subclasses podem sobrescrevê-lo (override)
+    public void exibirDetalhes() {
+        System.out.println("Produto: " + nome + " - Preço: R$ " + preco);
     }
 }
